@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Checkout - E-Shop</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="navbar"><h2>🛒 E-Shop</h2><nav><a href="index.html">Home</a><a href="cart.html">Cart 🛒</a></nav></header>
+<div class="auth-container"><div class="auth-box"><h2>Order Confirmation</h2><p>Your cart is ready for checkout.</p><button id="confirmBtn">Confirm Order</button><p id="checkoutMessage"></p></div></div>
+<script>
+const message = document.getElementById("checkoutMessage");
+document.getElementById("confirmBtn").addEventListener("click", () => {
+  localStorage.removeItem("cart");
+  message.textContent = "Order placed successfully!";
+  setTimeout(() => { window.location.href = "index.html"; }, 1000);
+});
+</script></body></html>
