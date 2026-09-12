@@ -33,7 +33,7 @@ A web-based **E-Commerce Product Management & Shopping System** that provides a 
 ### 🔐 System Features
 
 * User authentication
-* Database-driven product management
+* Database-driven user id managment
 * Responsive and user-friendly interface
 
 **Purpose:** To provide an efficient, organized, and user-friendly solution for online shopping and e-commerce product management.
